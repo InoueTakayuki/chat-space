@@ -39,7 +39,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
@@ -52,10 +52,9 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|e-mail|string|null: false,|
+|name|string|null: false, unique: true|
+|e-mail|string|null: false, unique: true|
 |password|string|null: false, unique: true|
-|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
