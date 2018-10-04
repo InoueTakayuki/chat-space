@@ -74,8 +74,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|member_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false, foreign_key: true|
+|name|string|null: false, unique: true|
 
 
 ### Association
