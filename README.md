@@ -32,7 +32,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
-- has_many :massages
+- has_many :messages
 
 
 
@@ -64,9 +64,9 @@ Things you may want to cover:
 |password|string|null: false, unique: true|
 
 ### Association
-- belongs_to :group
-- has_many :massages
-- belongs_to :member
+- has_many :groups, :through: :members
+- has_many :members
+- has_many :messages
 
 
 
@@ -81,6 +81,6 @@ Things you may want to cover:
 
 
 ### Association
-- has_many :users
-- has_many :massages
-- belongs_to :member
+- has_many :users, through: :members
+- has_many :members
+- has_many :messages
