@@ -35,6 +35,8 @@ Things you may want to cover:
 
 
 
+
+
 ## messagesテーブル
 
 |Column|Type|Options|
@@ -48,6 +50,9 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
+
+
+
 ## usersテーブル
 
 |Column|Type|Options|
@@ -57,5 +62,22 @@ Things you may want to cover:
 |password|string|null: false, unique: true|
 
 ### Association
-- belongs_to :group
-- has_many :massages
+- has_many :groups, :through: :members
+- has_many :members
+- has_many :messages
+
+
+
+
+
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+
+
+### Association
+- has_many :users, through: :members
+- has_many :members
+- has_many :messages
