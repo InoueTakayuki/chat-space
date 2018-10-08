@@ -25,9 +25,8 @@ body{
         float: left;
       }
       .icon.box {
-        padding-top:25px;
+        padding:25px 10px 0 0;
         float: right;
-        padding-right: 10px;
       }
     }
 
@@ -44,9 +43,8 @@ body{
       height: calc(100vh - 140px);
       background-color: $inner-color;
       .inner-text{
-        padding-top: 20px;
+        padding: 20px 0 40px;
         background-color: $inner-color;
-        padding-bottom: 40px;
 
         .main-text p{
           font-size: 15px;
@@ -77,8 +75,7 @@ body{
         height: 40px;
         float:right;
         margin-right: 40px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding: 0 20px 0;
         background-color: rgba(0, 0, 0, 0);
         border-color:#38AEF0;
         color: #38AEF0;
@@ -86,22 +83,21 @@ body{
         margin-top: 25px;
       }
       .group-text{
-        padding-top: 20px;
-        padding-left:40px;
+        padding: 20px 0 0 40px;
         .group-name{
           width: 900px;
           padding-bottom: 15px;
         }
         .group-name p{
-            font-size:20px;
+          font-size:20px;
         }
         .bottom-short-text{
           height: 20px;
           width: 900px;
         }
         .bottom-short-text p{
-            font-size: 12px;
-            color: #999999;
+          font-size: 12px;
+          color: #999999;
         }
       }
     }
@@ -111,8 +107,7 @@ body{
     .right-center-contents{
       height: calc(100vh - 230px);
       .text.contents{
-        padding-top:46px;
-        padding-left:40px;
+        padding:46px 0 0 40px;
         .name{
           font-size:16px;
           color:#434A54;
@@ -138,8 +133,7 @@ body{
       .textbox{
       height: 44px;
       width: 80%;
-      margin-top:20px;
-      margin-left: 40px;
+      margin:20px 0 0 40px;
       font-size: 18px;
       padding-left: 18px;
       }
@@ -157,10 +151,8 @@ body{
         line-height   : 1em;
         transition    : .3s;
         height        : 50px;
-        margin-left   : 50px;
-        margin-right  : 40px;
-        padding-right : 20px;
-        padding-left  : 20px;
+        margin        : 0 40px 0 50px;
+        padding       : 0 20px 0;
       }
     }
   }
