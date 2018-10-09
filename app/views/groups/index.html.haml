@@ -13,16 +13,18 @@
             = link_to edit_user_path(current_user) do
               = fa_icon 'cog', class: 'icon'
       .inner-contents
-        .inner-text
-          .main-text
-            %p
-          .sub-text
-            %p
+        - current_user.groups.each do |group|
+          .inner-text
+            = link_to group_messages_path(group) do
+              .main-text
+                %p
+                  = group.name
+              .sub-text
+                %p
+                  メッセージはまだありません
     .right-contents
       .right-top-contents
-
         %input.btn{:type => "submit", :value => "Edit"}/
-
         .group-text
           .group-name
             %p
@@ -30,7 +32,6 @@
           .bottom-short-text
             %p
               members: Takayuki Inoue
-
       .right-center-contents
         .text.contents
           .name-day
@@ -58,4 +59,3 @@
           %input.textbox{:name => "example", :size => "30", :type => "text", :placeholder =>"type a message"}/
           %a.fa.fa-image{:href => "#"}
           %input.btn{:type => "submit", :value => "Send"}/
-
