@@ -4,11 +4,14 @@
       .header-contents
         .textbox
           %p
-            Takayuki Inoue
+            = current_user.name
         .icon.box
-          %p
-            %i.fa.fa-edit
-            %i.fa.fa-cog
+          %p.list
+            = link_to do
+              = fa_icon 'pencil-square-o', class: 'icon'
+          %p.list
+            = link_to edit_user_path(current_user) do
+              = fa_icon 'cog', class: 'icon'
 
       .inner-contents
         .inner-text
