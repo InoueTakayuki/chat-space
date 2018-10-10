@@ -2,15 +2,14 @@
   .header-contents
     .textbox
       %p
-      = current_user.name
+        = current_user.name
     .icon.box
       %p.list
         = link_to new_group_path do
           = fa_icon 'pencil-square-o', class: 'icon'
-      %p.list
+      %p.icon
         = link_to edit_user_path(current_user) do
           = fa_icon 'cog', class: 'icon'
-
   .inner-contents
     .inner-text
       - current_user.groups.each do |group|
@@ -20,4 +19,4 @@
               = group.name
           .sub-text
             %p
-              まだメッセージはありません
+              = group.show_last_message
