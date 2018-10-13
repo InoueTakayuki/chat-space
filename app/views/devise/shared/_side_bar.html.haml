@@ -1,0 +1,22 @@
+.left-contents
+  .header-contents
+    .textbox
+      %p
+        = current_user.name
+    .icon.box
+      %p.list
+        = link_to new_group_path do
+          = fa_icon 'pencil-square-o', class: 'icon'
+      %p.icon
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
+  .inner-contents
+    .inner-text
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .main-text
+            %p
+              = group.name
+          .sub-text
+            %p
+              メッセージはまだありません

@@ -1,46 +1,46 @@
-.left-contents {
-  box-sizing: border-box;
-  color: $white;
-  width: 300px;
-  .header-contents {
-    background-color: $side_blue_dark;
-    height: 100px;
-    line-height: 100px;
-    padding: 0 20px;
-    .textbox {
-      display: inline-block;
-      // font-size: $side_header_font;
-      font-weight: bold;
-    }
-    .icon.box {
-      display: inline-block;
-      float: right;
-      .list {
-        display: inline-block;
-      }
-      .icon {
-        color: $white;
-        // font-size: $side_header_font;
-      }
-    }
-  }
+// .left-contents {
+//   box-sizing: border-box;
+//   color: $white;
+//   width: 300px;
+//   .header-contents {
+//     background-color: $side_blue_dark;
+//     height: 100px;
+//     line-height: 100px;
+//     padding: 0 20px;
+//     // .textbox {
+//     //   display: inline-block;
+//     //   // font-size: $side_header_font;
+//     //   font-weight: bold;
+//     // }
+//     // .icon.box {
+//     //   display: inline-block;
+//     //   float: right;
+//     //   .list {
+//     //     display: inline-block;
+//     //   }
+//     //   .icon {
+//     //     color: $white;
+//     //     // font-size: $side_header_font;
+//     //   }
+//     }
+//   }
 
-  .inner-contents {
-    // background-color: $side_blue_light;
-    height: calc(100vh - 100px);
-    padding: 0 20px;
-     .inner-text {
-      box-sizing: border-box;
-      padding: 20px 0 40px;
-       .main-text {
-        color: $white;
-        // font-size: $side_group_name;
-      }
-        .sub-text {
-        color: $white;
-        // font-size: $side_group_message;
-        margin-top: 5px;
-      }
-    }
-  }
-}
+//   .inner-contents {
+//     // background-color: $side_blue_light;
+//     height: calc(100vh - 100px);
+//     padding: 0 20px;
+//      .inner-text {
+//       box-sizing: border-box;
+//       padding: 20px 0 40px;
+//        .main-text {
+//         color: $white;
+//         // font-size: $side_group_name;
+//       }
+//         .sub-text {
+//         color: $white;
+//         // font-size: $side_group_message;
+//         margin-top: 5px;
+//       }
+//     }
+//   }
+// }
