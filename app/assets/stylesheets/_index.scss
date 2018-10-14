@@ -105,7 +105,7 @@ body{
     .right-top-contents p{
       margin:0;
     }
-    .right-center-contents{
+    .messages{
       height: calc(100vh - 230px);
       .text.contents{
         padding:46px 0 0 40px;
@@ -128,33 +128,74 @@ body{
         }
       }
     }
+    // .right-bottom-contents{
+    //   height:90px;
+    //   background-color: #AAAAAA;
     .right-bottom-contents{
-      height:90px;
-      background-color: #AAAAAA;
-      .form__message{
-      height: 44px;
-      width: 80%;
-      margin:20px 0 0 40px;
-      font-size: 18px;
-      padding-left: 18px;
-      }
-      .form_mask.image{
-        margin-left: -50px;
-      }
-      .hidden{display:none;
-      }
+        background-color: #DDDDDD;
+        box-sizing: border-box;
+        height: 90px;
+        padding: 20px 50px 20px 40px;
+        .form__message{
+          border: none;
+          float: left;
+          height: 50px;
+          width: calc(100% - 150px);
+          }
+        .form-mask{
+          background-color: white;
+          float: left;
+          height: 50px;
+          padding-right: 10px;
+          .form_mask.image{
+            font-size: 20px;
+            line-height: 50px;
+          }
+          }
+          .hidden{
+            display:none;
+          }
+          .form__submit {
+          background-color: #38AEF0;
+          border: none;
+          color: white;
+          float: right;
+          font-size: 16px;
+          height: 50px;
+          margin-left: 15px;
+          padding: 0 30px;
+          }}
+      // .form__message{
+      // height: 44px;
+      // width: 80%;
+      // margin:20px 0 0 40px;
+      // font-size: 18px;
+      // padding-left: 18px;
+      // }
+      // .form_mask.image{
+      //   margin-left: -50px;
+      // }
+      // .hidden{display:none;
+      // }
 
-      .form__submit{
-        width: 100px;
-        font-size: 16pt;
-        text-align: center;
-        background: #38AEF0;
-        color: white;
-        line-height: 1em;
-        height: 50px;
-        margin: 0 40px 0 50px;
-        padding: 0 20px 0;
-      }
+      // .form__submit{
+      //   // width: 100px;
+      //   // font-size: 16pt;
+      //   // text-align: center;
+      //   // background: #38AEF0;
+      //   // color: white;
+      //   // line-height: 1em;
+      //   // height: 50px;
+      //   // margin: 0 40px 0 50px;
+      //   // padding: 0 20px 0;
+      // background-color: #38AEF0;
+      // border: none;
+      // color: white;
+      // float: right;
+      // font-size: 16px;
+      // height: 50px;
+      // margin-left: 15px;
+      // padding: 0 30px;
+      // }
     }
-  }
 }
