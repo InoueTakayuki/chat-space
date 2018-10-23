@@ -64,7 +64,7 @@ $(function(){
     .done(function(json) {
       // alert('成功')
       var insertHTML = "";
-      json.messages.forEach(function(message) {
+      json.forEach(function(message) {
         if(message.id > presentMessageId){
           insertHTML += buildHTML(message);
           $('.messages').append(insertHTML).animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');;
