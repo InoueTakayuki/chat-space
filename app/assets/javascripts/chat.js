@@ -5,9 +5,8 @@ $(function(){
     } else {
       img = ""
     }
-    console.log(img)
     var html =`
-    <div class="text-contents">
+    <div class="text-contents" id="${message.id}">
       <div class="name-day">
         <div class="name">
           <p>${message.name}</p>
@@ -47,4 +46,37 @@ $(function(){
       alert('error')
     })
   })
+    $(function(){
+    setInterval(update, 5000);
+  });
+
+  function update(){
+    var presentMessageId = $('.text-contents').last().attr('id')
+    if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+
+    $.ajax({
+      url: window.location.href,
+      type: 'GET',
+      data: {id: presentMessageId},
+      dataType: 'json'
+    })
+
+    .done(function(json) {
+      // alert('成功')
+      var insertHTML = "";
+      json.forEach(function(message) {
+        if(message.id > presentMessageId){
+          insertHTML += buildHTML(message);
+          $('.messages').append(insertHTML).animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');;
+        }
+      });
+    })
+    .fail(function(json) {
+      alert('自動更新に失敗しました');
+    });
+
+       } else{
+        clearInterval(interval);
+      }
+  }
 });
